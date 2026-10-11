@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Bridge Book</title>
+<meta name="description" content="Your own accounting: past, present, future. A private pocket notebook in three parts.">
+<meta name="theme-color" content="#f6f0e4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1c1916" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Bridge Book">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png" sizes="180x180">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#app">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="#/welcome" aria-label="The Bridge Book, home">The Bridge Book</a>
+  <nav class="topnav" aria-label="Main">
+    <a href="#/book" data-nav="book">My book</a>
+    <a href="#/settings" data-nav="settings">Settings</a>
+  </nav>
+</header>
+<main id="app" tabindex="-1"></main>
+<footer class="privacy">
+  <p>Everything you write stays on this device. Nothing is sent anywhere.</p>
+</footer>
+<div id="print" aria-hidden="true"></div>
+<dialog id="confirm" aria-labelledby="confirm-title" aria-describedby="confirm-body">
+  <form method="dialog">
+    <h2 id="confirm-title"></h2>
+    <p id="confirm-body"></p>
+    <div class="row">
+      <button value="cancel" class="btn">Cancel</button>
+      <button value="ok" class="btn primary" id="confirm-ok">OK</button>
+    </div>
+  </form>
+</dialog>
+<noscript><p class="noscript">The Bridge Book needs JavaScript turned on. Nothing you write leaves this device.</p></noscript>
+<script src="app.js"></script>
+</body>
+</html>
